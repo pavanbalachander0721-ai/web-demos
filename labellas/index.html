@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>La Bella's · Handmade candles & return gifts, Bangalore</title>
+<meta name="description" content="Hand-poured candles shaped like tulips, lotuses, daisies and desserts. Return gifts for weddings and events, candle workshops and pop-ups across Bangalore. Shipping across India.">
+<meta name="theme-color" content="#F6F6F0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F6F0; --card:#FFFFFF; --sage:#B7CBB0; --sage-wash:#DCE7D6; --sage-deep:#4F6B4C;
+  --ink:#1E2620; --soft:#5B655C; --line:#DDE3D8; --berry:#B23A5C; --blush:#F3DCDD;
+  --script:"Allura",cursive; --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+:focus-visible{outline:2px solid var(--berry);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* demo bar */
+.demo{background:var(--ink);color:#d9dfd6;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.demo a{color:#fff;font-weight:600}
+
+/* header */
+header.top{position:sticky;top:0;z-index:40;background:rgba(246,246,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.logo{display:flex;flex-direction:column;align-items:center;text-decoration:none;position:relative;padding:2px 10px}
+.logo::before{content:"";position:absolute;inset:-6px -10px;z-index:-1;border-radius:50%;
+  background:radial-gradient(closest-side at 30% 55%,rgba(150,190,145,.55),transparent),radial-gradient(closest-side at 70% 40%,rgba(170,205,160,.5),transparent),radial-gradient(closest-side at 55% 70%,rgba(140,180,140,.35),transparent);filter:blur(2px)}
+.logo b{font-family:var(--script);font-weight:400;font-size:34px;line-height:.9}
+.logo small{font-size:8.5px;letter-spacing:.32em;margin-top:2px}
+nav.main{display:flex;gap:26px;font-size:15px}
+nav.main a{text-decoration:none;color:var(--soft)}
+nav.main a:hover{color:var(--ink)}
+.carticon{position:relative;display:flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid var(--ink);border-radius:999px;font-size:14px;font-weight:500}
+.carticon svg{width:18px;height:18px}
+.carticon .n{min-width:20px;height:20px;border-radius:10px;background:var(--berry);color:#fff;font-size:12px;display:grid;place-items:center;padding:0 5px}
+@media(max-width:860px){nav.main{display:none}}
+
+/* hero */
+.hero{padding:44px 0 56px}
+.hero .wrap{display:grid;gap:34px;align-items:center}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1fr 1.05fr;gap:56px;min-height:calc(100svh - 140px)}}
+.hero .eyebrow{font-family:var(--script);font-size:32px;color:var(--sage-deep);line-height:1}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.5rem,5.6vw,4.4rem);line-height:1.02;letter-spacing:-.01em;margin-top:6px}
+.hero p.lede{color:var(--soft);font-size:1.08rem;max-width:42ch;margin-top:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:999px;font-weight:500;text-decoration:none;font-size:15.5px;transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.line{border:1px solid var(--ink)}
+.btn.berry{background:var(--berry);color:#fff}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;font-size:14px;color:var(--soft)}
+.facts span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--sage);margin-right:8px;vertical-align:middle}
+
+.collage{position:relative;aspect-ratio:1/1.02;max-width:600px;width:100%;margin:0 auto}
+.collage figure{position:absolute;overflow:hidden;border-radius:var(--r);box-shadow:0 30px 50px -30px rgba(30,40,30,.45);opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.collage img{width:100%;height:100%;object-fit:cover}
+.collage .a{left:0;top:0;width:64%;height:78%;animation-delay:.05s}
+.collage .b{right:0;top:9%;width:44%;height:44%;animation-delay:.25s}
+.collage .c{right:5%;bottom:0;width:48%;height:44%;animation-delay:.42s}
+.collage .tag{position:absolute;left:4%;bottom:5%;background:var(--card);border-radius:999px;padding:9px 16px;font-size:13.5px;box-shadow:0 10px 24px -14px rgba(0,0,0,.4);opacity:0;animation:rise .7s .7s forwards}
+.collage .tag b{font-family:var(--script);font-weight:400;font-size:22px;color:var(--berry);margin-right:6px;vertical-align:-3px}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* section heads */
+section{padding:70px 0}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:30px}
+.head h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,4vw,2.9rem);line-height:1.05}
+.head p{color:var(--soft);max-width:46ch}
+.script{font-family:var(--script);font-weight:400;color:var(--sage-deep);font-size:1.25em}
+
+/* christmas strip */
+.xmas{background:#2C3A2E;color:#F1F3EC;padding:0;overflow:hidden}
+.xmas .wrap{display:grid;gap:0}
+@media(min-width:900px){.xmas .wrap{grid-template-columns:1fr 1.25fr;align-items:stretch}}
+.xmas .txt{padding:56px 0 40px}
+@media(min-width:900px){.xmas .txt{padding:70px 50px 70px 0}}
+.xmas h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.1rem,4.4vw,3.2rem);line-height:1.05}
+.xmas h2 .script{color:#E7A9B5}
+.xmas p{color:#C9D2C4;margin-top:14px;max-width:40ch}
+.xmas .btn.light{background:#F1F3EC;color:#2C3A2E;margin-top:24px}
+.xmas .pics{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;padding:0 0 30px;min-height:420px}
+@media(min-width:900px){.xmas .pics{padding:30px 0}}
+.xmas .pics img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.xmas .pics .tall{grid-row:span 2}
+
+/* shop */
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:24px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:14.5px;white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+@media(min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 22px}}
+@media(min-width:1080px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.prod{display:flex;flex-direction:column;text-align:left}
+.prod .ph{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--sage-wash)}
+.prod .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.prod:hover .ph img{transform:scale(1.04)}
+.prod .badge{position:absolute;left:10px;top:10px;background:var(--card);border-radius:999px;font-size:12px;padding:4px 10px}
+.prod h3{font-family:var(--serif);font-weight:600;font-size:1.22rem;line-height:1.15;margin-top:12px}
+.prod .meta{font-size:13.5px;color:var(--soft)}
+.prod .price{font-weight:500;margin-top:4px}
+.note{font-size:13px;color:var(--soft);margin-top:26px;text-align:center}
+
+/* why */
+.why{background:var(--sage-wash)}
+.why .cols{display:grid;gap:26px}
+@media(min-width:800px){.why .cols{grid-template-columns:repeat(3,1fr);gap:40px}}
+.why h3{font-family:var(--serif);font-weight:600;font-size:1.45rem;line-height:1.15}
+.why p{color:var(--soft);margin-top:8px}
+.why .ic{width:44px;height:44px;margin-bottom:12px;color:var(--sage-deep)}
+
+/* events */
+.events .split{display:grid;gap:34px}
+@media(min-width:960px){.events .split{grid-template-columns:1.05fr 1fr;gap:56px;align-items:start}}
+.cardmaker{background:var(--card);border-radius:20px;padding:22px;box-shadow:0 24px 50px -36px rgba(30,40,30,.5)}
+.cardmaker h3{font-family:var(--serif);font-weight:600;font-size:1.5rem}
+.cardmaker .sub{color:var(--soft);font-size:14.5px}
+.preview{margin:18px auto 0;width:min(300px,100%);aspect-ratio:2/3;background:#fff;border:1px solid var(--line);border-radius:6px;box-shadow:0 18px 30px -20px rgba(0,0,0,.35);position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;padding:22px 16px}
+.preview::before,.preview::after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;filter:blur(18px);opacity:.55}
+.preview::before{left:-40px;bottom:-40px;background:var(--pv1,#CFE0F2)}
+.preview::after{right:-40px;top:-40px;background:var(--pv2,#E9D4E8)}
+.preview .occ{font-family:var(--script);font-size:30px;line-height:1.05;text-align:center;color:var(--pvink,#3F5577);position:relative;z-index:1;min-height:64px}
+.preview .flower{position:relative;z-index:1;margin-top:auto;margin-bottom:auto;width:46%}
+.preview .stem{position:absolute;left:50%;top:50%;width:2px;height:46%;background:#8BA06E;z-index:0}
+.preview .dt{position:relative;z-index:1;font-size:12px;letter-spacing:.12em;color:var(--soft)}
+.fields{display:grid;gap:12px;margin-top:18px}
+@media(min-width:520px){.fields.two{grid-template-columns:1fr 1fr}}
+label.f{display:grid;gap:6px;font-size:13.5px;font-weight:500}
+label.f input,label.f select,label.f textarea{width:100%;min-height:46px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 12px;font-weight:400;font-size:15.5px}
+label.f textarea{min-height:84px;resize:vertical}
+.swatches{display:flex;gap:10px;flex-wrap:wrap}
+.sw{width:38px;height:38px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.sw[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink)}
+.est{margin-top:16px;padding:16px;border-radius:12px;background:var(--sage-wash)}
+.est .big{font-family:var(--serif);font-size:2rem;font-weight:600;line-height:1.1}
+.est .small{font-size:13.5px;color:var(--soft)}
+.ev-pics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ev-pics img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.ev-pics .wide{grid-column:span 2;aspect-ratio:2/1.1}
+.ticks{list-style:none;margin-top:18px;display:grid;gap:8px}
+.ticks li{padding-left:26px;position:relative}
+.ticks li::before{content:"";position:absolute;left:0;top:.45em;width:14px;height:8px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
+
+/* workshops + popups */
+.two-up{display:grid;gap:22px}
+@media(min-width:900px){.two-up{grid-template-columns:1fr 1fr}}
+.panel{border-radius:20px;overflow:hidden;background:var(--card);display:flex;flex-direction:column}
+.panel .pimg{aspect-ratio:16/10;overflow:hidden}
+.panel .pimg img{width:100%;height:100%;object-fit:cover}
+.panel .body{padding:24px}
+.panel h3{font-family:var(--serif);font-weight:600;font-size:1.75rem;line-height:1.1}
+.panel p{color:var(--soft);margin-top:8px}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.kv div{background:var(--paper);border-radius:10px;padding:10px 12px}
+.kv b{display:block;font-family:var(--serif);font-size:1.25rem;line-height:1.1}
+.kv span{font-size:12.5px;color:var(--soft)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+@media(min-width:760px){.gal{grid-template-columns:repeat(6,1fr)}}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px}
+
+/* faq */
+.faq{max-width:780px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-weight:500;font-size:1.05rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--sage-deep)}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--soft);margin-top:10px}
+
+footer{background:var(--ink);color:#C7CEC4;padding:50px 0 120px}
+footer .wrap{display:grid;gap:26px}
+@media(min-width:800px){footer .wrap{grid-template-columns:1.4fr 1fr 1fr;padding-bottom:0}footer{padding-bottom:50px}}
+footer .logo b{color:#fff}footer .logo small{color:#C7CEC4}
+footer h4{color:#fff;font-weight:500;margin-bottom:8px}
+footer a{text-decoration:none;display:block;padding:3px 0}
+footer .fine{font-size:13px;grid-column:1/-1;border-top:1px solid #36423A;padding-top:18px}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:45;display:none;gap:8px}
+.mbar a,.mbar button{flex:1;min-height:52px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:500;text-decoration:none;box-shadow:0 12px 24px -12px rgba(0,0,0,.45)}
+.mbar .shop{background:#fff;border:1px solid var(--ink)}
+.mbar .cart{background:var(--ink);color:#fff}
+@media(max-width:760px){.mbar{display:flex}}
+
+/* drawers/modals */
+.scrim{position:fixed;inset:0;background:rgba(20,26,22,.45);z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--paper);z-index:61;transform:translateX(100%);transition:transform .3s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.dhead{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--line)}
+.dhead h3{font-family:var(--serif);font-weight:600;font-size:1.6rem}
+.x{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:24px}
+.x:hover{background:var(--sage-wash)}
+.dbody{flex:1;overflow:auto;padding:16px 20px}
+.dfoot{padding:16px 20px calc(16px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#fff}
+.line-item{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.line-item img{width:64px;height:64px;object-fit:cover;border-radius:10px}
+.line-item h4{font-family:var(--serif);font-size:1.1rem;font-weight:600;line-height:1.1}
+.line-item .m{font-size:13px;color:var(--soft)}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:#fff}
+.qty button{width:36px;height:36px;font-size:18px}
+.qty span{min-width:24px;text-align:center;font-size:14.5px}
+.empty{text-align:center;color:var(--soft);padding:50px 10px}
+.empty .script{font-size:2.2rem;display:block}
+.totals{display:flex;justify-content:space-between;font-weight:500;margin-bottom:12px}
+
+.modal{position:fixed;left:50%;top:50%;z-index:62;width:min(920px,calc(100% - 24px));max-height:calc(100svh - 24px);overflow:auto;background:var(--paper);border-radius:20px;transform:translate(-50%,-46%);opacity:0;pointer-events:none;transition:.28s cubic-bezier(.2,.7,.2,1)}
+.modal.on{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}
+.modal .x{position:absolute;right:10px;top:10px;background:rgba(255,255,255,.9);z-index:2}
+.pd{display:grid}
+@media(min-width:760px){.pd{grid-template-columns:1fr 1fr}}
+.pd .ph{aspect-ratio:1;background:var(--sage-wash)}
+.pd .ph img{width:100%;height:100%;object-fit:cover}
+@media(min-width:760px){.pd .ph{aspect-ratio:auto;min-height:100%}}
+.pd .info{padding:24px}
+.pd h3{font-family:var(--serif);font-weight:600;font-size:2rem;line-height:1.05}
+.pd .price{font-size:1.25rem;font-weight:500;margin-top:6px}
+.pd p{color:var(--soft);margin-top:10px}
+.opt{margin-top:18px}
+.opt .lbl{font-size:13.5px;font-weight:500;margin-bottom:8px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:14px}
+.pill[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#fff}
+.addrow{display:flex;gap:10px;margin-top:22px;align-items:center}
+.addrow .btn{flex:1}
+
+.wa{padding:26px 22px}
+.wa h3{font-family:var(--serif);font-weight:600;font-size:1.7rem;line-height:1.1;padding-right:40px}
+.wa .bubble{margin-top:16px;background:#DCF8C6;border-radius:14px 14px 4px 14px;padding:14px 16px;white-space:pre-wrap;font-size:14.5px;line-height:1.5;box-shadow:0 1px 1px rgba(0,0,0,.08);max-height:44svh;overflow:auto}
+.wa .chat{background:#ECE5DD;border-radius:16px;padding:14px}
+.wa .who{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-weight:500;font-size:14.5px}
+.wa .who i{width:34px;height:34px;border-radius:50%;background:var(--sage);display:grid;place-items:center;font-style:normal;font-family:var(--script);font-size:20px}
+.wa .note2{font-size:13.5px;color:var(--soft);margin-top:14px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,16px);background:var(--ink);color:#fff;padding:12px 18px;border-radius:999px;font-size:14.5px;z-index:70;opacity:0;pointer-events:none;transition:.25s}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(min-width:761px){.toast{bottom:28px}}
+body.lock{overflow:hidden}
+</style>
+</head>
+<body>
+<div class="demo">Free website preview made for La Bella's by Pavan. Prices and dates are samples. <a href="https://wa.me/916361648286?text=Hi%20Pavan%2C%20about%20the%20La%20Bella%27s%20website%20preview">Talk to Pavan</a></div>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top" aria-label="La Bella's home"><b>La Bella's</b><small>BEAUTY WITHIN</small></a>
+  <nav class="main" aria-label="Main">
+    <a href="#shop">Shop</a><a href="#christmas">Christmas</a><a href="#gifts">Return gifts</a><a href="#workshops">Workshops</a><a href="#popups">Pop-ups</a>
+  </nav>
+  <button class="carticon" id="openCart" aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Bag <span class="n" id="cartN">0</span></button>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">handmade in Bangalore</div>
+    <h1>Candles too pretty to light, made to gift.</h1>
+    <p class="lede">Tulips, lotuses, daisies and little desserts, hand-poured in small batches. For your home, your festivals, and return gifts your guests will actually keep.</p>
+    <div class="btns"><a class="btn dark" href="#shop">Shop candles</a><a class="btn line" href="#gifts">Plan return gifts</a></div>
+    <div class="facts"><span>Shipping across India</span><span>Bulk & event orders</span><span>Workshops & pop-ups</span></div>
+  </div>
+  <div class="collage" aria-hidden="true">
+    <figure class="a"><img src="img/tulips.webp" alt="" fetchpriority="high"></figure>
+    <figure class="b"><img src="img/lotus-pink.webp" alt=""></figure>
+    <figure class="c"><img src="img/daisies.webp" alt="" style="object-position:50% 70%"></figure>
+    <div class="tag"><b>new</b>Christmas collection is here</div>
+  </div>
+</div></section>
+
+<section class="xmas" id="christmas"><div class="wrap">
+  <div class="txt">
+    <h2>The <span class="script">Christmas</span> collection</h2>
+    <p>Sculpted trees in glass, a little reindeer, snowflakes in a heart box. Made in small batches, so order early for Christmas gifting.</p>
+    <button class="btn light" data-filter="christmas" data-go="shop">Shop Christmas</button>
+  </div>
+  <div class="pics">
+    <img class="tall" src="img/tree-table.webp" alt="Red and white sculpted Christmas tree candles in glasses" loading="lazy">
+    <img src="img/reindeer.webp" alt="Ivory reindeer candle with a red ribbon" loading="lazy">
+    <img src="img/heart-box.webp" alt="Heart-shaped glass box with snowflake candles" loading="lazy">
+  </div>
+</div></section>
+
+<section id="shop"><div class="wrap">
+  <div class="head"><h2>Shop the collection</h2><p>Tap any candle to pick a fragrance and add it to your bag. Your order comes to us on WhatsApp.</p></div>
+  <div class="chips" role="group" aria-label="Filter candles" id="chips"></div>
+  <div class="grid" id="grid"></div>
+  <p class="note">Sample prices for this preview. La Bella's sets the real ones.</p>
+</div></section>
+
+<section class="why"><div class="wrap">
+  <div class="head"><h2>Why people keep coming back</h2></div>
+  <div class="cols">
+    <div><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M24 6c-5 7-9 11-9 18a9 9 0 0 0 18 0c0-7-4-11-9-18z"/><path d="M24 30v12M18 42h12"/></svg><h3>Made to be displayed</h3><p>Every candle is a little sculpture, from lotus petals to tulip bunches. People put them on shelves before they ever light them.</p></div>
+    <div><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 20h28v20H10z"/><path d="M6 14h36v6H6zM24 14v26"/><path d="M24 14c-4-6-12-6-10-1 1 2 6 1 10 1zM24 14c4-6 12-6 10-1-1 2-6 1-10 1z"/></svg><h3>Gifts with your words on them</h3><p>Return-gift cards printed with your occasion, names and date, each holding a hand-poured flower candle.</p></div>
+    <div><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 38c6-2 10-8 16-8s10 6 16 8"/><circle cx="24" cy="16" r="7"/><path d="M24 23v7"/></svg><h3>Hand-poured, small batch</h3><p>Poured by hand in Bangalore in small batches, so every order is made with care, not pulled off a factory shelf.</p></div>
+  </div>
+</div></section>
+
+<section class="events" id="gifts"><div class="wrap">
+  <div class="head"><h2>Return gifts for <span class="script">every</span> occasion</h2><p>Weddings, baptisms, anniversaries, baby showers and corporate events. Design your card below and get a quick estimate.</p></div>
+  <div class="split">
+    <div class="cardmaker">
+      <h3>Design your gift card</h3>
+      <p class="sub">See how your card will look. We'll match the candle colour to your theme.</p>
+      <div class="preview" id="pv">
+        <div class="occ" id="pvOcc">Ananya & Rahul's Wedding</div>
+        <span class="stem" aria-hidden="true"></span>
+        <svg class="flower" viewBox="0 0 120 120" aria-hidden="true"><g id="pvFl" fill="#E46C83"><ellipse cx="60" cy="30" rx="15" ry="24"/><ellipse cx="60" cy="90" rx="15" ry="24"/><ellipse cx="30" cy="60" rx="24" ry="15"/><ellipse cx="90" cy="60" rx="24" ry="15"/><ellipse cx="39" cy="39" rx="15" ry="22" transform="rotate(-45 39 39)"/><ellipse cx="81" cy="81" rx="15" ry="22" transform="rotate(-45 81 81)"/><ellipse cx="81" cy="39" rx="15" ry="22" transform="rotate(45 81 39)"/><ellipse cx="39" cy="81" rx="15" ry="22" transform="rotate(45 39 81)"/></g><circle cx="60" cy="60" r="16" fill="#FBF3E4"/><circle cx="60" cy="60" r="2" fill="#B9B0A2"/></svg>
+        <div class="dt" id="pvDt">14 . 02 . 2027</div>
+      </div>
+      <div class="fields two">
+        <label class="f">Text on the card<input id="inOcc" maxlength="40" value="Ananya & Rahul's Wedding"></label>
+        <label class="f">Date<input id="inDt" type="date" value="2027-02-14"></label>
+      </div>
+      <div class="fields">
+        <div class="f" style="display:grid;gap:8px"><span style="font-size:13.5px;font-weight:500">Candle colour</span>
+          <div class="swatches" id="sws"></div></div>
+      </div>
+      <div class="fields two">
+        <label class="f">Number of guests<input id="inQty" type="number" min="25" step="5" value="150" inputmode="numeric"></label>
+        <label class="f">Gift type<select id="inType">
+          <option value="79">Flower candle on printed card</option>
+          <option value="65">Tulle-wrapped candle favour</option>
+          <option value="149">Lotus candle in glass</option>
+          <option value="199">Gift box with 2 candles</option>
+        </select></label>
+      </div>
+      <div class="est" aria-live="polite"><div class="small">Rough estimate</div><div class="big" id="est">₹11,850</div><div class="small" id="estNote">150 × ₹79 each. Minimum 25 pieces.</div></div>
+      <button class="btn berry" style="width:100%;margin-top:16px" id="quoteBtn">Request a quote on WhatsApp</button>
+    </div>
+    <div>
+      <div class="ev-pics">
+        <img class="wide" src="img/card-baptism.webp" alt="Pink flower candles on baptism return-gift cards" loading="lazy">
+        <img src="img/card-anniversary.webp" alt="Blue flower candle on an anniversary card" loading="lazy">
+        <img src="img/tulle-favours.webp" alt="Ivory candles wrapped in tulle with gold ribbon" loading="lazy">
+      </div>
+      <ul class="ticks">
+        <li>Your names, occasion and date printed on every card</li>
+        <li>Candle colours matched to your theme</li>
+        <li>Packed and ready to hand out</li>
+        <li>Delivered anywhere in India</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="workshops" style="padding-top:20px"><div class="wrap">
+  <div class="two-up">
+    <article class="panel">
+      <div class="pimg"><img src="img/workshop.webp" alt="Candle workshop poster: beginner level, 2,500 rupees per person" loading="lazy" style="object-position:50% 35%"></div>
+      <div class="body">
+        <h3>Candle-making workshops</h3>
+        <p>A relaxed beginner session where you pour your own candle and take it home. Perfect with friends, or as a team outing.</p>
+        <div class="kv"><div><b>₹2,500</b><span>per person</span></div><div><b>1.5 hrs</b><span>beginner level</span></div><div><b>Kit</b><span>included</span></div></div>
+        <div class="fields two">
+          <label class="f">Your name<input id="wsName" autocomplete="name"></label>
+          <label class="f">People<select id="wsN"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></label>
+        </div>
+        <button class="btn dark" style="width:100%;margin-top:14px" id="wsBtn">Join the next workshop</button>
+      </div>
+    </article>
+    <article class="panel" id="popups">
+      <div class="pimg"><img src="img/shot-jars.webp" alt="Colourful candles in glass jars at a pop-up stall" loading="lazy"></div>
+      <div class="body">
+        <h3>Pop-ups in your apartment</h3>
+        <p>We set up our candle stall at apartment societies across Bangalore. Want La Bella's at yours? Tell us where, and we'll plan it with your committee.</p>
+        <div class="fields two">
+          <label class="f">Apartment / society<input id="puSoc" placeholder="e.g. Prestige Ivy Terraces"></label>
+          <label class="f">Area<input id="puArea" placeholder="e.g. Bellandur"></label>
+        </div>
+        <button class="btn line" style="width:100%;margin-top:14px" id="puBtn">Request a pop-up</button>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+  <div class="head"><h2>From our studio</h2><a class="btn line" href="https://www.instagram.com/thebellas21/" target="_blank" rel="noopener">Follow @thebellas21</a></div>
+  <div class="gal">
+    <img src="img/lotus-blush.webp" alt="" loading="lazy"><img src="img/urli.webp" alt="" loading="lazy"><img src="img/laddoo-box.webp" alt="" loading="lazy">
+    <img src="img/tree-red.webp" alt="" loading="lazy"><img src="img/coconut.webp" alt="" loading="lazy"><img src="img/blossom-box.webp" alt="" loading="lazy">
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head" style="justify-content:center;text-align:center"><h2>Questions</h2></div>
+  <div class="faq">
+    <details><summary>Do you ship outside Bangalore?</summary><p>Yes, we ship across India. Delivery times depend on your pincode; we'll confirm when you order.</p></details>
+    <details><summary>What's the minimum for return gifts?</summary><p>25 pieces. For weddings and large events, message us 2–3 weeks ahead so we can make everything fresh.</p></details>
+    <details><summary>Can I choose colours and fragrances?</summary><p>Yes. Pick a fragrance when you add a candle, and for event orders we match colours to your theme.</p></details>
+    <details><summary>How should I burn my candle?</summary><p>Burn on a flat, heat-safe surface, away from fans and children, for up to 2 hours at a time. Sculpted candles look just as lovely unlit.</p></details>
+    <details><summary>How do I pay?</summary><p>Once we confirm your order on WhatsApp, we'll share UPI or bank details.</p></details>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><a class="logo" href="#top" style="align-items:flex-start;padding:0"><b>La Bella's</b><small>BEAUTY WITHIN</small></a><p style="margin-top:14px;max-width:36ch">Handmade candles and return gifts from Bangalore, shipped across India.</p></div>
+  <div><h4>Shop</h4><a href="#shop">All candles</a><a href="#christmas">Christmas</a><a href="#gifts">Return gifts</a></div>
+  <div><h4>Visit</h4><a href="#workshops">Workshops</a><a href="#popups">Pop-ups</a><a href="https://www.instagram.com/thebellas21/" target="_blank" rel="noopener">Instagram</a></div>
+  <div class="fine">Website preview by Pavan · Photos from @thebellas21</div>
+</div></footer>
+
+<div class="mbar"><a class="shop" href="#shop">Shop</a><button class="cart" id="openCart2">Bag · <span id="cartN2">0</span></button></div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your bag" aria-hidden="true">
+  <div class="dhead"><h3>Your bag</h3><button class="x" data-close aria-label="Close bag">×</button></div>
+  <div class="dbody" id="lines"></div>
+  <div class="dfoot" id="dfoot"></div>
+</aside>
+<div class="modal" id="pmodal" role="dialog" aria-modal="true" aria-label="Candle details"></div>
+<div class="modal" id="wamodal" role="dialog" aria-modal="true" aria-label="WhatsApp message preview" style="width:min(480px,calc(100% - 24px))"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const inr=n=>'₹'+n.toLocaleString('en-IN');
+const FR=['Vanilla','Rose','Jasmine','Lavender','Sandalwood','Unscented'];
+const P=[
+ {id:'tulip',name:'Tulip bunch',cat:'flowers',img:'tulips',price:549,unit:'set of 3',tag:'Bestseller',d:'Three sculpted tulips on green stems. Pick pinks, yellows and whites, or one colour for a calmer look.'},
+ {id:'lotus',name:'Lotus in glass',cat:'flowers',img:'lotus-pink',price:399,unit:'one jar',d:'A pink lotus resting on a pour of white wax in a clear glass. Lovely for pooja corners and Diwali gifting.'},
+ {id:'lotusb',name:'Blush lotus pair',cat:'flowers',img:'lotus-blush',price:699,unit:'set of 2',d:'Two soft-pink lotus candles in glasses, a matching pair for a side table.'},
+ {id:'daisy',name:'Daisy candles',cat:'flowers',img:'daisies',price:299,unit:'set of 4',tag:'Pick colours',d:'Bright little daisies in every colour. Float them, scatter them on a table, or pack them as favours.'},
+ {id:'urli',name:'Flower urli',cat:'flowers',img:'urli',price:449,unit:'one urli',d:'A peach blossom candle set in a gold-finish urli. Light it, or just let it sit pretty.'},
+ {id:'tree',name:'Christmas tree in glass',cat:'christmas',img:'tree-table',price:349,unit:'one glass',tag:'New',d:'Sculpted trees in red, white and two-tone, sitting in a clear glass.'},
+ {id:'treer',name:'Sculpted red tree',cat:'christmas',img:'tree-red',price:299,unit:'one tree',tag:'New',d:'A layered red Christmas tree candle that stands on its own.'},
+ {id:'deer',name:'Reindeer',cat:'christmas',img:'reindeer',price:399,unit:'one candle',tag:'New',d:'An ivory reindeer with a red-and-white ribbon. A sweet Secret Santa gift.'},
+ {id:'heart',name:'Snowflake heart box',cat:'christmas',img:'heart-box',price:499,unit:'gift box',d:'White snowflake candles in a heart-shaped glass box with a gold rim.'},
+ {id:'mac',name:'Macaron gift box',cat:'desserts',img:'macaron-box',price:649,unit:'box of 8',d:'Pastel macaron candles in a gift box. They look good enough to eat (please don’t).'},
+ {id:'ladoo',name:'Laddoo candle box',cat:'desserts',img:'laddoo-box',price:449,unit:'box of 4',d:'Golden laddoo candles in a festive box, made for Diwali and shagun gifting.'},
+ {id:'blossom',name:'Blossom gift box',cat:'desserts',img:'blossom-box',price:599,unit:'gift box',d:'A rose candle surrounded by tiny blossoms in a gold tin, in a windowed box.'},
+ {id:'coco',name:'Coconut shell candle',cat:'jars',img:'coconut',price:349,unit:'one shell',d:'Hand-poured into a real coconut shell. Our newest favourite.'},
+ {id:'shots',name:'Shot-glass candles',cat:'jars',img:'shot-jars',price:499,unit:'set of 6',d:'Six bright candles in little glass jars. Mix colours for a party table.'},
+ {id:'card',name:'Flower candle on card',cat:'gifts',img:'card-anniversary',price:79,unit:'per piece, min 25',min:25,d:'A flower candle on a printed card with your occasion, names and date. Design it in the return-gifts section.'},
+ {id:'tulle',name:'Tulle-wrapped favour',cat:'gifts',img:'tulle-favours',price:65,unit:'per piece, min 25',min:25,d:'Ivory candle wrapped in tulle and tied with a gold ribbon. Elegant wedding favours.'}
+];
+const CATS=[['all','All'],['flowers','Flowers'],['christmas','Christmas'],['desserts','Desserts & festive'],['jars','Jars'],['gifts','Return gifts']];
+let cat='all';
+const chips=$('#chips'),grid=$('#grid');
+chips.innerHTML=CATS.map(([k,v])=>`<button class="chip" data-c="${k}" aria-pressed="${k===cat}">${v}</button>`).join('');
+function render(){grid.innerHTML=P.filter(p=>cat==='all'||p.cat===cat).map(p=>`<button class="prod" data-id="${p.id}"><div class="ph"><img src="img/${p.img}.webp" alt="${p.name}" loading="lazy">${p.tag?`<span class="badge">${p.tag}</span>`:''}</div><h3>${p.name}</h3><div class="meta">${p.unit}</div><div class="price">${inr(p.price)}</div></button>`).join('');}
+render();
+chips.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;cat=b.dataset.c;$$('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render();});
+$$('[data-filter]').forEach(b=>b.addEventListener('click',()=>{cat=b.dataset.filter;$$('.chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.c===cat));render();$('#shop').scrollIntoView();}));
+
+/* overlays */
+const scrim=$('#scrim');let open=null,lastFocus=null;
+function show(el){lastFocus=document.activeElement;document.getElementById('toast').classList.remove('on');closeAll(true);open=el;el.classList.add('on');el.setAttribute('aria-hidden','false');scrim.classList.add('on');document.body.classList.add('lock');setTimeout(()=>{const f=el.querySelector('button,input,select,a');f&&f.focus()},60);}
+function closeAll(keep){$$('.drawer.on,.modal.on').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-hidden','true')});if(!keep){scrim.classList.remove('on');document.body.classList.remove('lock');lastFocus&&lastFocus.focus&&lastFocus.focus();}open=null;}
+scrim.addEventListener('click',()=>closeAll());
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&open)closeAll();});
+document.addEventListener('click',e=>{if(e.target.closest('[data-close]'))closeAll();});
+
+/* cart */
+let cart=[];try{cart=JSON.parse(localStorage.getItem('lb_cart')||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem('lb_cart',JSON.stringify(cart))}catch(e){}};
+const count=()=>cart.reduce((a,l)=>a+l.q,0);
+function badge(){const n=count();$('#cartN').textContent=n;$('#cartN2').textContent=n;}
+function drawCart(){
+  const L=$('#lines'),F=$('#dfoot');
+  if(!cart.length){L.innerHTML=`<div class="empty"><span class="script">Your bag is empty</span>Find something pretty in the shop.</div>`;F.innerHTML=`<a class="btn dark" style="width:100%" href="#shop" data-close>Browse candles</a>`;return;}
+  L.innerHTML=cart.map((l,i)=>{const p=P.find(x=>x.id===l.id);return `<div class="line-item"><img src="img/${p.img}.webp" alt=""><div><h4>${p.name}</h4><div class="m">${l.f} · ${p.unit}</div><div class="qty" style="margin-top:6px"><button data-dec="${i}" aria-label="Fewer">−</button><span>${l.q}</span><button data-inc="${i}" aria-label="More">+</button></div></div><div>${inr(p.price*l.q)}</div></div>`}).join('');
+  const tot=cart.reduce((a,l)=>a+P.find(x=>x.id===l.id).price*l.q,0);
+  F.innerHTML=`<div class="totals"><span>Total</span><span>${inr(tot)}</span></div>
+   <div class="fields two" style="margin-top:0"><label class="f">Name<input id="cName" autocomplete="name"></label><label class="f">Pincode<input id="cPin" inputmode="numeric" maxlength="6" autocomplete="postal-code"></label></div>
+   <button class="btn berry" style="width:100%;margin-top:12px" id="sendOrder">Send order on WhatsApp</button>
+   <p style="font-size:12.5px;color:var(--soft);margin-top:8px;text-align:center">Shipping is added when we confirm your order.</p>`;
+  $('#sendOrder').onclick=()=>{const tot2=cart.reduce((a,l)=>a+P.find(x=>x.id===l.id).price*l.q,0);
+    const lines=cart.map(l=>{const p=P.find(x=>x.id===l.id);return `• ${p.name} (${l.f}) × ${l.q} = ${inr(p.price*l.q)}`}).join('\n');
+    wa('Your order is ready to send',`Hi La Bella's! I'd like to order:\n${lines}\n\nTotal: ${inr(tot2)}\nName: ${$('#cName').value||'—'}\nPincode: ${$('#cPin').value||'—'}`);};
+}
+$('#lines').addEventListener('click',e=>{const d=e.target.closest('[data-dec]'),u=e.target.closest('[data-inc]');if(!d&&!u)return;const i=+(d||u).dataset[d?'dec':'inc'];const p=P.find(x=>x.id===cart[i].id);const min=p.min||1;
+  if(u)cart[i].q+=p.min?5:1;else{cart[i].q-=p.min?5:1;if(cart[i].q<min)cart.splice(i,1);}save();badge();drawCart();});
+function openCart(){drawCart();show($('#drawer'));}
+$('#openCart').onclick=openCart;$('#openCart2').onclick=openCart;
+function add(id,f,q){const l=cart.find(x=>x.id===id&&x.f===f);l?l.q+=q:cart.push({id,f,q});save();badge();setTimeout(()=>toast(`Added to your bag`),320);}
+badge();
+
+/* product modal */
+grid.addEventListener('click',e=>{const b=e.target.closest('.prod');if(b)openProd(b.dataset.id);});
+function openProd(id){const p=P.find(x=>x.id===id);let f=FR[0],q=p.min||1;
+  const m=$('#pmodal');
+  m.innerHTML=`<button class="x" data-close aria-label="Close">×</button><div class="pd"><div class="ph"><img src="img/${p.img}.webp" alt="${p.name}"></div><div class="info">
+   <h3>${p.name}</h3><div class="price">${inr(p.price)} <span style="font-size:.85rem;color:var(--soft);font-weight:400">${p.unit}</span></div><p>${p.d}</p>
+   <div class="opt"><div class="lbl">Fragrance</div><div class="pills" id="frs">${FR.map((x,i)=>`<button class="pill" aria-pressed="${!i}">${x}</button>`).join('')}</div></div>
+   <div class="addrow"><div class="qty"><button id="qd" aria-label="Fewer">−</button><span id="qv">${q}</span><button id="qu" aria-label="More">+</button></div><button class="btn dark" id="addB">Add to bag</button></div>
+   ${p.min?`<p style="font-size:13.5px">Want your names on it? <a href="#gifts" data-close>Design your card</a>.</p>`:''}
+  </div></div>`;
+  m.querySelector('#frs').onclick=e=>{const b=e.target.closest('.pill');if(!b)return;f=b.textContent;m.querySelectorAll('.pill').forEach(x=>x.setAttribute('aria-pressed',x===b));};
+  const step=p.min?5:1;
+  m.querySelector('#qd').onclick=()=>{q=Math.max(p.min||1,q-step);m.querySelector('#qv').textContent=q};
+  m.querySelector('#qu').onclick=()=>{q+=step;m.querySelector('#qv').textContent=q};
+  m.querySelector('#addB').onclick=()=>{add(p.id,f,q);closeAll();};
+  show(m);}
+
+/* whatsapp preview */
+function wa(title,msg){const m=$('#wamodal');
+  m.innerHTML=`<button class="x" data-close aria-label="Close">×</button><div class="wa"><h3>${title}</h3>
+   <div class="chat" style="margin-top:16px"><div class="who"><i>B</i>La Bella's</div><div class="bubble"></div></div>
+   <p class="note2">On the live site, this button opens WhatsApp with this message already typed, straight to La Bella's. Nothing is sent from this preview.</p>
+   <button class="btn dark" style="width:100%;margin-top:14px" data-close>Got it</button></div>`;
+  m.querySelector('.bubble').textContent=msg;show(m);}
+let tt;function toast(t){const el=$('#toast');el.textContent=t;el.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>el.classList.remove('on'),1800);}
+
+/* card maker + estimator */
+const COLS=[['Rose','#E46C83','#F6D3DA','#E9D4E8','#8E3B52'],['Sky','#8EC5D6','#CFE0F2','#DCEFF3','#3F5577'],['Peach','#F4A07A','#FBE0CF','#F7E7C9','#8A4B2E'],['Ivory','#EFE6D2','#E8E2D0','#DCE7D6','#5B655C'],['Sage','#9DBA93','#DCE7D6','#EDF1E3','#4F6B4C']];
+let col=0;
+$('#sws').innerHTML=COLS.map((c,i)=>`<button class="sw" style="background:${c[1]}" aria-label="${c[0]}" aria-pressed="${!i}" data-i="${i}"></button>`).join('');
+function paint(){const c=COLS[col],pv=$('#pv');$('#pvFl').setAttribute('fill',c[1]);pv.style.setProperty('--pv1',c[2]);pv.style.setProperty('--pv2',c[3]);pv.style.setProperty('--pvink',c[4]);}
+$('#sws').onclick=e=>{const b=e.target.closest('.sw');if(!b)return;col=+b.dataset.i;$$('.sw').forEach(x=>x.setAttribute('aria-pressed',x===b));paint();};
+const fmtD=v=>{if(!v)return'';const [y,m,d]=v.split('-');return `${d} . ${m} . ${y}`};
+$('#inOcc').oninput=e=>$('#pvOcc').textContent=e.target.value||'Your occasion';
+$('#inDt').oninput=e=>$('#pvDt').textContent=fmtD(e.target.value);
+function est(){let n=Math.max(0,parseInt($('#inQty').value)||0);const sel=$('#inType');const each=+sel.value;const shown=Math.max(n,25);
+  $('#est').textContent=inr(shown*each);$('#estNote').textContent=`${shown} × ${inr(each)} each. Minimum 25 pieces.${shown>=200?' Large orders may get a better rate.':''}`;}
+$('#inQty').oninput=est;$('#inType').onchange=est;est();paint();
+$('#quoteBtn').onclick=()=>{const sel=$('#inType');wa('Your quote request',`Hi La Bella's! I'd like a quote for return gifts.\nOccasion text: ${$('#inOcc').value}\nDate: ${fmtD($('#inDt').value)}\nGift: ${sel.options[sel.selectedIndex].text}\nColour: ${COLS[col][0]}\nGuests: ${$('#inQty').value}\nEstimate shown: ${$('#est').textContent}`);};
+$('#wsBtn').onclick=()=>wa('Workshop request',`Hi La Bella's! I'd like to join your next candle-making workshop.\nName: ${$('#wsName').value||'—'}\nPeople: ${$('#wsN').value}`);
+$('#puBtn').onclick=()=>wa('Pop-up request',`Hi La Bella's! We'd love a pop-up at our apartment.\nSociety: ${$('#puSoc').value||'—'}\nArea: ${$('#puArea').value||'—'}`);
+})();
+</script>
+</body>
+</html>
