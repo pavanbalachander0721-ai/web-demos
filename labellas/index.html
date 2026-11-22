@@ -56,7 +56,7 @@ nav.main a:hover::after{transform:scaleX(1);transform-origin:left}
 .hero{position:relative;height:min(100svh,900px);min-height:560px;overflow:hidden;background:var(--forest);color:#fff}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
 .slide.on{opacity:1}
-.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.1);transition:transform 7s linear}
+.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 7s linear}
 .slide.on img{transform:scale(1)}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,11,.45) 0%,rgba(10,14,11,0) 28%,rgba(10,14,11,.15) 55%,rgba(10,14,11,.72) 100%);pointer-events:none}
 .hero .copy{position:absolute;left:0;right:0;bottom:0;z-index:2;padding-bottom:56px}
@@ -353,8 +353,8 @@ body.lock{overflow:hidden}
 <section class="hero" id="hero" style="padding:0">
   <div class="slide on"><img src="img/tulips.webp" alt="" fetchpriority="high"></div>
   <div class="slide"><img src="img/lotus-pink.webp" alt="" loading="lazy"></div>
-  <div class="slide"><img src="img/daisies.webp" alt="" loading="lazy" style="object-position:50% 70%"></div>
-  <div class="slide"><img src="img/tree-table.webp" alt="" loading="lazy"></div>
+  <div class="slide"><img src="img/daisies.webp" alt="" loading="lazy"></div>
+  <div class="slide"><img src="img/heart-box.webp" alt="" loading="lazy" style="object-position:60% 55%"></div>
   <div class="copy"><div class="wrap">
     <div class="kicker">Hand-poured in Bangalore · shipping across India</div>
     <h1 data-words>Candles too pretty to light.</h1>
@@ -373,7 +373,7 @@ body.lock{overflow:hidden}
   <div class="head"><div><div class="label fx">Collections</div><h2 data-words>Find your candle</h2></div></div>
   <div class="cols">
     <button class="col fx" data-filter="flowers"><div class="rv"><img src="img/tulips.webp" alt="" loading="lazy"></div><div class="cap"><b>Flowers</b><span>5 designs</span></div></button>
-    <button class="col fx" data-filter="christmas"><div class="rv"><img src="img/tree-red.webp" alt="" loading="lazy"></div><div class="cap"><b>Christmas</b><span>New</span></div></button>
+    <button class="col fx" data-filter="christmas"><div class="rv"><img src="img/heart-box.webp" alt="" loading="lazy"></div><div class="cap"><b>Christmas</b><span>New</span></div></button>
     <button class="col fx" data-filter="desserts"><div class="rv"><img src="img/macaron-box.webp" alt="" loading="lazy"></div><div class="cap"><b>Desserts</b><span>Gift boxes</span></div></button>
     <button class="col fx" data-filter="jars"><div class="rv"><img src="img/shot-jars.webp" alt="" loading="lazy"></div><div class="cap"><b>Jars</b><span>Everyday</span></div></button>
     <button class="col fx" data-filter="gifts"><div class="rv"><img src="img/card-baptism.webp" alt="" loading="lazy"></div><div class="cap"><b>Return gifts</b><span>From 25 pcs</span></div></button>
